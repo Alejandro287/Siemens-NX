@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<KnowledgeReuse>
+<ItemData>
+	<Part Location="C-Clamp.prt"/>
+	<KeyParameter DescriptiveName="C-CLAMP SIZE">C-CLAMP SIZE</KeyParameter>
+	<KeyParameter DescriptiveName="TYPE">TYPE</KeyParameter>
+	<DataFile Location="C-Clamp.xls"/>
+</ItemData>
+<ComponentData>
+</ComponentData>
+</KnowledgeReuse>

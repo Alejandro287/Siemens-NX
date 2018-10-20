@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<KnowledgeReuse>
+<ItemData>
+	<Part Location="3 Jaw Chuck.prt"/>
+	<KeyParameter DescriptiveName="UNITS">UNITS</KeyParameter>
+	<KeyParameter DescriptiveName="CLAMP DIAMETER">CLAMP DIAMETER</KeyParameter>
+	<KeyParameter DescriptiveName="CLAMP DEPTH">CLAMP DEPTH</KeyParameter>
+	<KeyParameter DescriptiveName="CLEARANCE DIAMETER">CLEARANCE DIAMETER</KeyParameter>
+	<KeyParameter DescriptiveName="CLEARANCE DEPTH">CLEARANCE DEPTH</KeyParameter>
+	<KeyParameter DescriptiveName="CHUCK SIZE">CHUCK SIZE</KeyParameter>
+	<DataFile Location="3 Jaw Chuck.xls"/>
+</ItemData>
+<ComponentData>
+</ComponentData>
+<MatchData GeomType="" ParaName="CLAMP_DIA" ValueMatch="LE"/>
+</KnowledgeReuse>

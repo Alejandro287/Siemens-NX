@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<KnowledgeReuse>
+<ItemData>
+	<Part Location="Vise Tomb Stone.prt"/>
+	<KeyParameter DescriptiveName="$DESCRIPTION">$DESCRIPTION</KeyParameter>
+	<KeyParameter DescriptiveName="VISE_SIZE">VISE_SIZE</KeyParameter>
+	<KeyParameter DescriptiveName="OS_PART_NAME">OS_PART_NAME</KeyParameter>
+	<KeyParameter DescriptiveName="DB_PART_NO">DB_PART_NO</KeyParameter>
+	<DataFile Location="Vise Tomb Stone.xls"/>
+</ItemData>
+<ComponentData>
+</ComponentData>
+</KnowledgeReuse>

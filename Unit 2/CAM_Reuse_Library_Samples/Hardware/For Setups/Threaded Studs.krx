@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<KnowledgeReuse>
+<ItemData>
+	<Part Location="Threaded Studs.prt"/>
+	<KeyParameter DescriptiveName="UNITS">UNITS</KeyParameter>
+	<KeyParameter DescriptiveName="SIZE">SIZE</KeyParameter>
+	<KeyParameter DescriptiveName="LENGTH">LENGTH</KeyParameter>
+	<DataFile Location="Threaded Studs.xls"/>
+</ItemData>
+<ComponentData>
+</ComponentData>
+</KnowledgeReuse>

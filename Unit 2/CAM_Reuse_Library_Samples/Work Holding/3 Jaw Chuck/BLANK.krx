@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<KnowledgeReuse>
+<ItemData>
+	<Part Location="BLANK.prt"/>
+	<KeyParameter DescriptiveName="OUTSIDE DIAMETER">OD</KeyParameter>
+	<KeyParameter DescriptiveName="INSIDE DIAMETER">ID</KeyParameter>
+	<KeyParameter DescriptiveName="LENGTH">HEIGHT</KeyParameter>
+	<DataFile Location="BLANK.xls"/>
+</ItemData>
+<ComponentData>
+</ComponentData>
+</KnowledgeReuse>

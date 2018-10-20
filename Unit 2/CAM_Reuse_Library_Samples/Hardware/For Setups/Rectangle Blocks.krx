@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<KnowledgeReuse>
+<ItemData>
+	<Part Location="Rectangle Blocks.prt"/>
+	<KeyParameter DescriptiveName="SIZE">SIZE</KeyParameter>
+	<KeyParameter DescriptiveName="LENGTH">LENGTH</KeyParameter>
+	<KeyParameter DescriptiveName="WIDTH">WIDTH</KeyParameter>
+	<KeyParameter DescriptiveName="HEIGHT">HEIGHT</KeyParameter>
+	<DataFile Location="Rectangle Blocks.xls"/>
+	<DetailImage Location="../../../../../../UG_data/user_common/My_ReUse_Library/CAM Tooling/Hardware/For Setups/Rectangle Blocks.bmp"/>
+</ItemData>
+<ComponentData>
+</ComponentData>
+</KnowledgeReuse>

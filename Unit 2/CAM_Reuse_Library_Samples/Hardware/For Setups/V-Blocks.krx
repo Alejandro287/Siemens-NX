@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<KnowledgeReuse>
+<ItemData>
+	<Part Location="V-Blocks.prt"/>
+	<KeyParameter DescriptiveName="UNITS">UNITS</KeyParameter>
+	<KeyParameter DescriptiveName="SIZE">SIZE</KeyParameter>
+	<KeyParameter DescriptiveName="BASE HEIGHT">BASE HEIGHT</KeyParameter>
+	<KeyParameter DescriptiveName="BASE LENGHT">BASE LENGHT</KeyParameter>
+	<KeyParameter DescriptiveName="BASE WIDTH">BASE WIDTH</KeyParameter>
+	<KeyParameter DescriptiveName="V WIDTH">V WIDTH</KeyParameter>
+	<KeyParameter DescriptiveName="V HEIGHT">V HEIGHT</KeyParameter>
+	<DataFile Location="V-Blocks.xls"/>
+</ItemData>
+<ComponentData>
+</ComponentData>
+</KnowledgeReuse>

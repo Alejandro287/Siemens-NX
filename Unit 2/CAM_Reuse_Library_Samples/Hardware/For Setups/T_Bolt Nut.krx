@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<KnowledgeReuse>
+<ItemData>
+	<Part Location="T_Bolt Nut.prt"/>
+	<KeyParameter DescriptiveName="UNITS">UNITS</KeyParameter>
+	<KeyParameter DescriptiveName="SIZE">SIZE</KeyParameter>
+	<DataFile Location="T-Bolts Nut.xls"/>
+</ItemData>
+<ComponentData>
+</ComponentData>
+</KnowledgeReuse>

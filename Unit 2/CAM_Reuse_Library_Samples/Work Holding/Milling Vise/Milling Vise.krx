@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<KnowledgeReuse>
+<ItemData>
+	<Part Location="Milling Vise.prt"/>
+	<KeyParameter DescriptiveName="$DESCRIPTION">$DESCRIPTION</KeyParameter>
+	<KeyParameter DescriptiveName="JAW_STEP_DEPTH">JAW_STEP_DEPTH</KeyParameter>
+	<KeyParameter DescriptiveName="JAW_STEP_WIDTH">JAW_STEP_WIDTH</KeyParameter>
+	<DataFile Location="Milling Vise.xls"/>
+</ItemData>
+<ComponentData>
+</ComponentData>
+</KnowledgeReuse>

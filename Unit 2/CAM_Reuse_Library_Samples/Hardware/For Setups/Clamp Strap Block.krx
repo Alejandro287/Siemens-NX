@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<KnowledgeReuse>
+<ItemData>
+	<Part Location="Clamp Strap Block.prt"/>
+	<KeyParameter DescriptiveName="SIZE">SIZE</KeyParameter>
+	<KeyParameter DescriptiveName="LENGTH">LENGTH</KeyParameter>
+	<KeyParameter DescriptiveName="WIDTH">WIDTH</KeyParameter>
+	<KeyParameter DescriptiveName="HEIGHT">HEIGHT</KeyParameter>
+	<DataFile Location="Clamp Strap Block.xls"/>
+</ItemData>
+<ComponentData>
+</ComponentData>
+</KnowledgeReuse>

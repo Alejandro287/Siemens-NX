@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<KnowledgeReuse>
+<ItemData>
+	<Part Location="T-Bolt.prt"/>
+	<KeyParameter DescriptiveName="UNITS">UNITS</KeyParameter>
+	<KeyParameter DescriptiveName="SIZE">SIZE</KeyParameter>
+	<KeyParameter DescriptiveName="LENGTH">LENGTH</KeyParameter>
+	<DataFile Location="../../../../../../UG_data/user_common/My_ReUse_Library/CAM Tooling/Hardware/For Setups/T-Bolt.xls"/>
+</ItemData>
+<ComponentData>
+</ComponentData>
+</KnowledgeReuse>

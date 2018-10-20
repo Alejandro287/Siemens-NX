@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<KnowledgeReuse>
+<ItemData>
+	<Part Location="Rectangle Tombstone.prt"/>
+	<KeyParameter DescriptiveName="$DESCRIPTION">$DESCRIPTION</KeyParameter>
+	<KeyParameter DescriptiveName="BASE_WIDTH">BASE_WIDTH</KeyParameter>
+	<KeyParameter DescriptiveName="TOMBSTONE_LENGTH">TOMBSTONE_LENGTH</KeyParameter>
+	<KeyParameter DescriptiveName="RECTANGLE_HEIGHT">RECTANGLE_HEIGHT</KeyParameter>
+	<KeyParameter DescriptiveName="OS_PART_NAME">OS_PART_NAME</KeyParameter>
+	<DataFile Location="Rectangle Tombstone.xls"/>
+</ItemData>
+<ComponentData>
+</ComponentData>
+</KnowledgeReuse>

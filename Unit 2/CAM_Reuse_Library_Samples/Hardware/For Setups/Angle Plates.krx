@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<KnowledgeReuse>
+<ItemData>
+	<Part Location="Angle Plates.prt"/>
+	<KeyParameter DescriptiveName="UNITS">UNITS</KeyParameter>
+	<KeyParameter DescriptiveName="SIZE">SIZE</KeyParameter>
+	<KeyParameter DescriptiveName="LENGTH">LENGTH</KeyParameter>
+	<KeyParameter DescriptiveName="WIDTH">WIDTH</KeyParameter>
+	<KeyParameter DescriptiveName="HEIGHT">HEIGHT</KeyParameter>
+	<KeyParameter DescriptiveName="WEB">WEB</KeyParameter>
+	<DataFile Location="Angle Plates.xls"/>
+	<DetailImage Location="../../../../../../UG_data/user_common/My_ReUse_Library/CAM Tooling/Hardware/For Setups/Angle Plates.bmp"/>
+</ItemData>
+<ComponentData>
+</ComponentData>
+</KnowledgeReuse>

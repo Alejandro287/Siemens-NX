@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<KnowledgeReuse>
+<ItemData>
+	<Part Location="Main Collet Adapter.prt"/>
+	<KeyParameter DescriptiveName="$DESCRIPTION">$DESCRIPTION</KeyParameter>
+	<KeyParameter DescriptiveName="CLAMP_DIA">CLAMP_DIA</KeyParameter>
+	<DataFile Location="Main Collet Adapter.xls"/>
+</ItemData>
+<ComponentData>
+</ComponentData>
+</KnowledgeReuse>

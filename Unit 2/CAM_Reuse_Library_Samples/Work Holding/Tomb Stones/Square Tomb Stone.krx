@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<KnowledgeReuse>
+<ItemData>
+	<Part Location="Square Tomb Stone.prt"/>
+	<KeyParameter DescriptiveName="$DESCRIPTION">$DESCRIPTION</KeyParameter>
+	<KeyParameter DescriptiveName="BASE_SQUARE_DIAMETER">BASE_SQUARE_DIAMETER</KeyParameter>
+	<KeyParameter DescriptiveName="MOUNT_SQUARE_DIAMETER">MOUNT_SQUARE_DIAMETER</KeyParameter>
+	<KeyParameter DescriptiveName="MOUNT_SQUARE_HEIGHT">MOUNT_SQUARE_HEIGHT</KeyParameter>
+	<KeyParameter DescriptiveName="DB_PART_NO">DB_PART_NO</KeyParameter>
+	<DataFile Location="Square Tomb Stone.xls"/>
+</ItemData>
+<ComponentData>
+</ComponentData>
+</KnowledgeReuse>

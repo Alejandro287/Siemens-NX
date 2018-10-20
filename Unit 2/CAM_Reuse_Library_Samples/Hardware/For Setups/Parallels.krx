@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<KnowledgeReuse>
+<ItemData>
+	<Part Location="Parallels.prt"/>
+	<KeyParameter DescriptiveName="$DESCRIPTION">$DESCRIPTION</KeyParameter>
+	<KeyParameter DescriptiveName="HEIGHT">HEIGHT</KeyParameter>
+	<KeyParameter DescriptiveName="LENGTH">LENGTH</KeyParameter>
+	<KeyParameter DescriptiveName="WIDTH">WIDTH</KeyParameter>
+	<DataFile Location="Parallels.xls"/>
+</ItemData>
+<MatchData GeomType="" ParaName="WIDTH" ValueMatch="GE"/>
+</KnowledgeReuse>

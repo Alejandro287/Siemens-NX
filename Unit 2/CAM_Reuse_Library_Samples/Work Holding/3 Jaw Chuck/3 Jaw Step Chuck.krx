@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<KnowledgeReuse>
+<ItemData>
+	<Part Location="3 Jaw Step Chuck.prt"/>
+	<KeyParameter DescriptiveName="CLAMP_1_DIA">CLAMP_1_DIA</KeyParameter>
+	<KeyParameter DescriptiveName="CLAMP_1_DEPTH">CLAMP_1_DEPTH</KeyParameter>
+	<KeyParameter DescriptiveName="CLAMP_2_DIA">CLAMP_2_DIA</KeyParameter>
+	<KeyParameter DescriptiveName="CLAMP_2_DEPTH">CLAMP_2_DEPTH</KeyParameter>
+	<KeyParameter DescriptiveName="THRU_DIA">THRU_DIA</KeyParameter>
+	<DataFile Location="3 Jaw Step Chuck.xls"/>
+</ItemData>
+<ComponentData>
+</ComponentData>
+</KnowledgeReuse>

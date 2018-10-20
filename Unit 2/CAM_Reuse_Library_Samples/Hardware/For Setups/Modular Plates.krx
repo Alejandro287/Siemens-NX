@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<KnowledgeReuse>
+<ItemData>
+	<Part Location="Modular Plates.prt"/>
+	<KeyParameter DescriptiveName="SIZE">SIZE</KeyParameter>
+	<KeyParameter DescriptiveName="LENGTH X">LENGTH X</KeyParameter>
+	<KeyParameter DescriptiveName="WIDTH Y">WIDTH Y</KeyParameter>
+	<KeyParameter DescriptiveName="THICK Z">THICK Z</KeyParameter>
+	<KeyParameter DescriptiveName="THREAD">THREAD</KeyParameter>
+	<DataFile Location="Modular Plates.xls"/>
+</ItemData>
+<ComponentData>
+</ComponentData>
+</KnowledgeReuse>

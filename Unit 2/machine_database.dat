@@ -1,0 +1,225 @@
+###############################################################################
+# machine_database.dat - database file for machine database stored as ascii file
+###############################################################################
+#############################################################################
+##  Data file for the Machine tool
+##
+##
+##  The following key words for Attribute ids are defined
+##
+##  LIBRF   - unique record identifier
+##	T       - Machine type - MDM0101 -Mill machines
+##                         - MDM0104 -TurnMill machines
+##                         - MDM0201 -Lathe machines
+##                         - MDM0204 -MillTurn machines
+##                         - MDM0301 -Wedm machines
+##                         - MDM0901 -Generic machines
+##
+##  MNF     - Manufacturer
+##  DESCR   - Short description ( for example 3 Axis Mill) 
+##  CNTR    - indicating the controller of the machine
+##
+##  POST    - the configuration file name with the list of
+##            postprocessors for this machine 
+##            (The path will be found from the search path environment variable)
+##  RIGID   - Rigidity factor to apply to data from the machining data library
+##            This will normally be a number less than or equal to 1.0
+##  GRAPHICS- Geometry of the kinematic machine tool prt file
+##            (The full path needs to be included)
+##
+##############################################################################
+## REVISIONS
+##   Date             Who              Reason
+##   04-02-04     Jason Detzel         Added Milling Metric Machine tools
+##   04-30-04     Jason Detzel         Added Lathe Metric Machine tools
+##   05-28-04     Jason Detzel         Clarified the descriptions of the machines
+##   10-06-04     Markus Wilmsen       Remove dummy entries used as separators
+##   12-01-04     Jason Detzel         Added sim010101_011 example machine tools
+##   01-04-05     Jason Detzel         Added sim010101_012 INCH example machine tool
+##   25-Oct-05    JM                   Added sim_multi_channel_mm
+##   31-May-06    Jason Detzel         Restructured paths to the dat files for CSE
+##   14-Jun-06    Jason Detzel         Restructured paths to the dat files for CSE
+##   07-Jul-06    rlm                  Add missing fields for both sim010101_012 entries
+##   28-Dec-06    Ramon G. Rodriguez   Fix typo in sim010102_002_mm data entry
+##                                     The lathe machine entry was pointing to 
+##                                     the mill machine
+##   13-Mar-08    Thomas Schulz        Add GRAPHICS attribute and change the set
+##                                     of sample machine tools for NX6
+##   16-Apr-08    Thomas Schulz        cleanup new samples for NX6 IP24
+##   08-Jul-08    David Sommerfeldt    Activated sim11_turn_2ax_fanuc_mm example machine
+##   25-Jul-09    Thomas Schulz        Add sim12 sinumerik sim14 and sim10 for
+##                                     NX7.5 and comment out the old mtools
+##   14-Oct-09    David Sommerfeldt    Cleanup, remove old samples
+##   28-Oct-10    David Sommerfeldt    Add sim15 sinumerik
+##   14-Mar-12    Lili  Li             Add sim16 sinumerik
+##   18-Apr-12    Jerry Yao            Add sim15 fanuc
+##   17-Jul-12    Thomas Schulz        Change type identifier - make consistent with TC
+##   14-May-13    Lili Li              Change sim09 sinumerik metric example
+#    29-May-13    Lili Li              Add sim05 okuma
+##   23-Jul-14    Jason Fu             Add sim14 millplus
+##   20-Jul-15    Jeremy Wight         cam11030 NX10.0.3 robot submission
+##   21-Dec-15    Jeremy Wight         KUKA KR -> KUKA KRL
+##   01-Mar-16    Thomas Schulz        fixed a typo Sinumerk
+##   08-Apr-16    Zhiliang Su          Added new machine tools OOTB Content PostConfigurator
+##############################################################################
+FORMAT LIBRF T DESCR CNTR MNF POST RIGID GRAPHICS
+#--------------------------------------------------------------------------------
+
+DATA|Null Machine|MDM0901|Null Machine|None|-|${UGII_CAM_POST_DIR}template_post.dat|1.000000|
+
+DATA|ABB_IRB_6640_235_255|MDM0401|6-Ax robot with positioner|ABB RAPID|ABB|${UGII_CAM_LIBRARY_INSTALLED_MACHINES_DIR}ABB_IRB_6640_235_255\ABB_IRB_6640_235_255.dat|1.000000|${UGII_CAM_LIBRARY_INSTALLED_MACHINES_DIR}ABB_IRB_6640_235_255\graphics\ABB_IRB_6640_235_255
+DATA|ABB_IRB_6640_235_255_MW|MDM0401|6-Ax robot, mounted workpiece|ABB RAPID|ABB|${UGII_CAM_LIBRARY_INSTALLED_MACHINES_DIR}ABB_IRB_6640_235_255_MW\ABB_IRB_6640_235_255_MW.dat|1.000000|${UGII_CAM_LIBRARY_INSTALLED_MACHINES_DIR}ABB_IRB_6640_235_255_MW\graphics\ABB_IRB_6640_235_255_MW
+DATA|ABB_IRB_7600_23_500_on_rail|MDM0401|6-Ax robot on rail|ABB RAPID|ABB|${UGII_CAM_LIBRARY_INSTALLED_MACHINES_DIR}ABB_IRB_7600_23_500_on_rail\ABB_IRB_7600_23_500_on_rail.dat|1.000000|${UGII_CAM_LIBRARY_INSTALLED_MACHINES_DIR}ABB_IRB_7600_23_500_on_rail\graphics\ABB_IRB_7600_23_500_on_rail
+DATA|kuka_kr300_r2500_on_rail|MDM0401|6-Ax robot on rail|KUKA KRL|KUKA|${UGII_CAM_LIBRARY_INSTALLED_MACHINES_DIR}kuka_kr300_r2500_on_rail\kuka_kr300_r2500_on_rail.dat|1.000000|${UGII_CAM_LIBRARY_INSTALLED_MACHINES_DIR}kuka_kr300_r2500_on_rail\graphics\kuka_kr300_r2500_on_rail
+DATA|kuka_kr300_r2500_on_rail_sinumerik|MDM0401|6-Ax robot on rail|KUKA SINUMERIK|KUKA|${UGII_CAM_LIBRARY_INSTALLED_MACHINES_DIR}kuka_kr300_r2500_on_rail\kuka_kr300_r2500_on_rail_sinumerik.dat|1.000000|${UGII_CAM_LIBRARY_INSTALLED_MACHINES_DIR}kuka_kr300_r2500_on_rail\graphics\kuka_kr300_r2500_on_rail
+DATA|Fanuc_R_2000iB_210F|MDM0401|6-Ax robot|FANUC RJ|FANUC|${UGII_CAM_LIBRARY_INSTALLED_MACHINES_DIR}Fanuc_R_2000iB_210F\Fanuc_R_2000iB_210F.dat|1.000000|${UGII_CAM_LIBRARY_INSTALLED_MACHINES_DIR}Fanuc_R_2000iB_210F\graphics\Fanuc_R_2000iB_210F
+
+# New machine tools OOTB Content PostConfigurator
+DATA|sim01_mill_3ax_fanuc|MDM0101|3-Ax_Mill_Vertical|Fanuc|Example|${UGII_CAM_LIBRARY_INSTALLED_MACHINES_DIR}sim01_mill_3ax\sim01_mill_3ax_fanuc.dat|1.000000|${UGII_CAM_LIBRARY_INSTALLED_MACHINES_DIR}sim01_mill_3ax\graphics\sim01_mill_3ax
+DATA|sim01_mill_3ax_tnc|MDM0101|3-Ax_Mill_Vertical|HeidenhainTNC|Example|${UGII_CAM_LIBRARY_INSTALLED_MACHINES_DIR}sim01_mill_3ax\sim01_mill_3ax_tnc.dat|1.000000|${UGII_CAM_LIBRARY_INSTALLED_MACHINES_DIR}sim01_mill_3ax\graphics\sim01_mill_3ax
+DATA|sim01_mill_3ax_sinumerik|MDM0101|3-Ax_Mill_Vertical|Sinumerik|Example|${UGII_CAM_LIBRARY_INSTALLED_MACHINES_DIR}sim01_mill_3ax\sim01_mill_3ax_sinumerik.dat|1.000000|${UGII_CAM_LIBRARY_INSTALLED_MACHINES_DIR}sim01_mill_3ax\graphics\sim01_mill_3ax
+
+DATA|sim02_mill_3ax_fanuc|MDM0101|3-Ax_Mill_Horizontal|Fanuc|Example|${UGII_CAM_LIBRARY_INSTALLED_MACHINES_DIR}sim02_mill_3ax\sim02_mill_3ax_fanuc.dat|1.000000|${UGII_CAM_LIBRARY_INSTALLED_MACHINES_DIR}sim02_mill_3ax\graphics\sim02_mill_3ax
+DATA|sim02_mill_3ax_tnc|MDM0101|3-Ax_Mill_Horizontal|HeidenhainTNC|Example|${UGII_CAM_LIBRARY_INSTALLED_MACHINES_DIR}sim02_mill_3ax\sim02_mill_3ax_tnc.dat|1.000000|${UGII_CAM_LIBRARY_INSTALLED_MACHINES_DIR}sim02_mill_3ax\graphics\sim02_mill_3ax
+DATA|sim02_mill_3ax_sinumerik|MDM0101|3-Ax_Mill_Horizontal|Sinumerik|Example|${UGII_CAM_LIBRARY_INSTALLED_MACHINES_DIR}sim02_mill_3ax\sim02_mill_3ax_sinumerik.dat|1.000000|${UGII_CAM_LIBRARY_INSTALLED_MACHINES_DIR}sim02_mill_3ax\graphics\sim02_mill_3ax
+
+DATA|sim03_mill_4ax_fanuc|MDM0101|4-Ax_Mill_Horizontal_B-Table|Fanuc|Example|${UGII_CAM_LIBRARY_INSTALLED_MACHINES_DIR}sim03_mill_4ax\sim03_mill_4ax_fanuc.dat|1.000000|${UGII_CAM_LIBRARY_INSTALLED_MACHINES_DIR}sim03_mill_4ax\graphics\sim03_mill_4ax
+DATA|sim03_mill_4ax_tnc|MDM0101|4-Ax_Mill_Horizontal_B-Table|HeidenhainTNC|Example|${UGII_CAM_LIBRARY_INSTALLED_MACHINES_DIR}sim03_mill_4ax\sim03_mill_4ax_tnc.dat|1.000000|${UGII_CAM_LIBRARY_INSTALLED_MACHINES_DIR}sim03_mill_4ax\graphics\sim03_mill_4ax
+
+DATA|sim04_mill_4ax_fanuc|MDM0101|4-Ax_Mill_Vertical_A-Table|Fanuc|Example|${UGII_CAM_LIBRARY_INSTALLED_MACHINES_DIR}sim04_mill_4ax\sim04_mill_4ax_fanuc.dat|1.000000|${UGII_CAM_LIBRARY_INSTALLED_MACHINES_DIR}sim04_mill_4ax\graphics\sim04_mill_4ax
+DATA|sim04_mill_4ax_tnc|MDM0101|4-Ax_Mill_Vertical_A-Table|HeidenhainTNC|Example|${UGII_CAM_LIBRARY_INSTALLED_MACHINES_DIR}sim04_mill_4ax\sim04_mill_4ax_tnc.dat|1.000000|${UGII_CAM_LIBRARY_INSTALLED_MACHINES_DIR}sim04_mill_4ax\graphics\sim04_mill_4ax
+DATA|sim04_mill_4ax_sinumerik|MDM0101|4-Ax_Mill_Vertical_A-Table|Sinumerik|Example|${UGII_CAM_LIBRARY_INSTALLED_MACHINES_DIR}sim04_mill_4ax\sim04_mill_4ax_sinumerik.dat|1.000000|${UGII_CAM_LIBRARY_INSTALLED_MACHINES_DIR}sim04_mill_4ax\graphics\sim04_mill_4ax
+
+DATA|sim05_mill_5ax_fanuc|MDM0101|5-Ax_Mill_Gantry_AC-Head|Fanuc|Example|${UGII_CAM_LIBRARY_INSTALLED_MACHINES_DIR}sim05_mill_5ax\sim05_mill_5ax_fanuc.dat|1.000000|${UGII_CAM_LIBRARY_INSTALLED_MACHINES_DIR}sim05_mill_5ax\graphics\sim05_mill_5ax
+DATA|sim05_mill_5ax_tnc|MDM0101|5-Ax_Mill_Gantry_AC-Head|HeidenhainTNC|Example|${UGII_CAM_LIBRARY_INSTALLED_MACHINES_DIR}sim05_mill_5ax\sim05_mill_5ax_tnc.dat|1.000000|${UGII_CAM_LIBRARY_INSTALLED_MACHINES_DIR}sim05_mill_5ax\graphics\sim05_mill_5ax
+DATA|sim05_mill_5ax_sinumerik|MDM0101|5-Ax_Mill_Gantry_AC-Head|Sinumerik|Example|${UGII_CAM_LIBRARY_INSTALLED_MACHINES_DIR}sim05_mill_5ax\sim05_mill_5ax_sinumerik.dat|1.000000|${UGII_CAM_LIBRARY_INSTALLED_MACHINES_DIR}sim05_mill_5ax\graphics\sim05_mill_5ax
+
+DATA|sim06_mill_5ax_fanuc|MDM0101|5-Ax_Mill_Vertical_BC-Table_Offset|Fanuc|Example|${UGII_CAM_LIBRARY_INSTALLED_MACHINES_DIR}sim06_mill_5ax\sim06_mill_5ax_fanuc.dat|1.000000|${UGII_CAM_LIBRARY_INSTALLED_MACHINES_DIR}sim06_mill_5ax\graphics\sim06_mill_5ax
+DATA|sim06_mill_5ax_tnc|MDM0101|5-Ax_Mill_Vertical_BC-Table_Offset|HeidenhainTNC|Example|${UGII_CAM_LIBRARY_INSTALLED_MACHINES_DIR}sim06_mill_5ax\sim06_mill_5ax_tnc.dat|1.000000|${UGII_CAM_LIBRARY_INSTALLED_MACHINES_DIR}sim06_mill_5ax\graphics\sim06_mill_5ax
+DATA|sim06_mill_5ax_sinumerik|MDM0101|5-Ax_Mill_Vertical_BC-Table_Offset|Sinumerik|Example|${UGII_CAM_LIBRARY_INSTALLED_MACHINES_DIR}sim06_mill_5ax\sim06_mill_5ax_sinumerik.dat|1.000000|${UGII_CAM_LIBRARY_INSTALLED_MACHINES_DIR}sim06_mill_5ax\graphics\sim06_mill_5ax
+
+DATA|sim07_mill_5ax_fanuc|MDM0101|5-Ax_Mill_Vertical_B-Head_C-Table|Fanuc|Example|${UGII_CAM_LIBRARY_INSTALLED_MACHINES_DIR}sim07_mill_5ax\sim07_mill_5ax_fanuc.dat|1.000000|${UGII_CAM_LIBRARY_INSTALLED_MACHINES_DIR}sim07_mill_5ax\graphics\sim07_mill_5ax
+DATA|sim07_mill_5ax_tnc|MDM0101|5-Ax_Mill_Vertical_B-Head_C-Table|HeidenhainTNC|Example|${UGII_CAM_LIBRARY_INSTALLED_MACHINES_DIR}sim07_mill_5ax\sim07_mill_5ax_tnc.dat|1.000000|${UGII_CAM_LIBRARY_INSTALLED_MACHINES_DIR}sim07_mill_5ax\graphics\sim07_mill_5ax
+DATA|sim07_mill_5ax_sinumerik|MDM0101|5-Ax_Mill_Vertical_B-Head_C-Table|Sinumerik|Example|${UGII_CAM_LIBRARY_INSTALLED_MACHINES_DIR}sim07_mill_5ax\sim07_mill_5ax_sinumerik.dat|1.000000|${UGII_CAM_LIBRARY_INSTALLED_MACHINES_DIR}sim07_mill_5ax\graphics\sim07_mill_5ax
+
+DATA|sim08_mill_5ax_fanuc|MDM0101|5-Ax_Mill_Vertical_AC-Table|Fanuc|Example|${UGII_CAM_LIBRARY_INSTALLED_MACHINES_DIR}sim08_mill_5ax\sim08_mill_5ax_fanuc.dat|1.000000|${UGII_CAM_LIBRARY_INSTALLED_MACHINES_DIR}sim08_mill_5ax\graphics\sim08_mill_5ax
+DATA|sim08_mill_5ax_tnc|MDM0101|5-Ax_Mill_Vertical_AC-Table|HeidenhainTNC|Example|${UGII_CAM_LIBRARY_INSTALLED_MACHINES_DIR}sim08_mill_5ax\sim08_mill_5ax_tnc.dat|1.000000|${UGII_CAM_LIBRARY_INSTALLED_MACHINES_DIR}sim08_mill_5ax\graphics\sim08_mill_5ax
+DATA|sim08_mill_5ax_sinumerik|MDM0101|5-Ax_Mill_Vertical_AC-Table|Sinumerik|Example|${UGII_CAM_LIBRARY_INSTALLED_MACHINES_DIR}sim08_mill_5ax\sim08_mill_5ax_sinumerik.dat|1.000000|${UGII_CAM_LIBRARY_INSTALLED_MACHINES_DIR}sim08_mill_5ax\graphics\sim08_mill_5ax
+
+DATA|sim09_mill_5ax_fanuc|MDM0101|5-Ax_Mill_Vertical_45-B-Head_C-Table|Fanuc|Example|${UGII_CAM_LIBRARY_INSTALLED_MACHINES_DIR}sim09_mill_5ax\sim09_mill_5ax_fanuc.dat|1.000000|${UGII_CAM_LIBRARY_INSTALLED_MACHINES_DIR}sim09_mill_5ax\graphics\sim09_mill_5ax
+DATA|sim09_mill_5ax_tnc|MDM0101|5-Ax_Mill_Vertical_45-B-Head_C-Table|HeidenhainTNC|Example|${UGII_CAM_LIBRARY_INSTALLED_MACHINES_DIR}sim09_mill_5ax\sim09_mill_5ax_tnc.dat|1.000000|${UGII_CAM_LIBRARY_INSTALLED_MACHINES_DIR}sim09_mill_5ax\graphics\sim09_mill_5ax
+
+DATA|sim14_mill_5ax_fanuc|MDM0101|5-Ax_Mill_Vertical_45-B-Table_C-Table|Fanuc|Example|${UGII_CAM_LIBRARY_INSTALLED_MACHINES_DIR}sim14_mill_5ax\sim14_mill_5ax_fanuc.dat|1.000000|${UGII_CAM_LIBRARY_INSTALLED_MACHINES_DIR}sim14_mill_5ax\graphics\sim14_mill_5ax
+DATA|sim14_mill_5ax_tnc|MDM0101|5-Ax_Mill_Vertical_45-B-Table_C-Table|HeidenhainTNC|Example|${UGII_CAM_LIBRARY_INSTALLED_MACHINES_DIR}sim14_mill_5ax\sim14_mill_5ax_tnc.dat|1.000000|${UGII_CAM_LIBRARY_INSTALLED_MACHINES_DIR}sim14_mill_5ax\graphics\sim14_mill_5ax
+DATA|sim14_mill_5ax_sinumerik|MDM0101|5-Ax_Mill_Vertical_45-B-Table_C-Table|Sinumerik|Example|${UGII_CAM_LIBRARY_INSTALLED_MACHINES_DIR}sim14_mill_5ax\sim14_mill_5ax_sinumerik.dat|1.000000|${UGII_CAM_LIBRARY_INSTALLED_MACHINES_DIR}sim14_mill_5ax\graphics\sim14_mill_5ax
+
+# New machine tools metric
+DATA|sim01_mill_3ax_fanuc_mm|MDM0101|3-Ax Mill Vertical|Fanuc|Example|${UGII_CAM_LIBRARY_INSTALLED_MACHINES_DIR}sim01_mill_3ax\sim01_mill_3ax_fanuc_mm.dat|1.000000|${UGII_CAM_LIBRARY_INSTALLED_MACHINES_DIR}sim01_mill_3ax\graphics\sim01_mill_3ax
+DATA|sim01_mill_3ax_tnc_mm|MDM0101|3-Ax Mill Vertical|HeidenhainTNC|Example|${UGII_CAM_LIBRARY_INSTALLED_MACHINES_DIR}sim01_mill_3ax\sim01_mill_3ax_tnc_mm.dat|1.000000|${UGII_CAM_LIBRARY_INSTALLED_MACHINES_DIR}sim01_mill_3ax\graphics\sim01_mill_3ax
+DATA|sim01_mill_3ax_sinumerik_mm|MDM0101|3-Ax Mill Vertical|Sinumerik|Example|${UGII_CAM_LIBRARY_INSTALLED_MACHINES_DIR}sim01_mill_3ax\sim01_mill_3ax_sinumerik_mm.dat|1.000000|${UGII_CAM_LIBRARY_INSTALLED_MACHINES_DIR}sim01_mill_3ax\graphics\sim01_mill_3ax
+
+DATA|sim02_mill_3ax_fanuc_mm|MDM0101|3-Ax Mill Horizontal|Fanuc|Example|${UGII_CAM_LIBRARY_INSTALLED_MACHINES_DIR}sim02_mill_3ax\sim02_mill_3ax_fanuc_mm.dat|1.000000|${UGII_CAM_LIBRARY_INSTALLED_MACHINES_DIR}sim02_mill_3ax\graphics\sim02_mill_3ax
+DATA|sim02_mill_3ax_tnc_mm|MDM0101|3-Ax Mill Horizontal|HeidenhainTNC|Example|${UGII_CAM_LIBRARY_INSTALLED_MACHINES_DIR}sim02_mill_3ax\sim02_mill_3ax_tnc_mm.dat|1.000000|${UGII_CAM_LIBRARY_INSTALLED_MACHINES_DIR}sim02_mill_3ax\graphics\sim02_mill_3ax
+DATA|sim02_mill_3ax_sinumerik_mm|MDM0101|3-Ax Mill Horizontal|Sinumerik|Example|${UGII_CAM_LIBRARY_INSTALLED_MACHINES_DIR}sim02_mill_3ax\sim02_mill_3ax_sinumerik_mm.dat|1.000000|${UGII_CAM_LIBRARY_INSTALLED_MACHINES_DIR}sim02_mill_3ax\graphics\sim02_mill_3ax
+
+DATA|sim03_mill_4ax_fanuc_mm|MDM0101|4-Ax Mill Horizontal B-Table|Fanuc|Example|${UGII_CAM_LIBRARY_INSTALLED_MACHINES_DIR}sim03_mill_4ax\sim03_mill_4ax_fanuc_mm.dat|1.000000|${UGII_CAM_LIBRARY_INSTALLED_MACHINES_DIR}sim03_mill_4ax\graphics\sim03_mill_4ax
+DATA|sim03_mill_4ax_tnc_mm|MDM0101|4-Ax Mill Horizontal B-Table|HeidenhainTNC|Example|${UGII_CAM_LIBRARY_INSTALLED_MACHINES_DIR}sim03_mill_4ax\sim03_mill_4ax_tnc_mm.dat|1.000000|${UGII_CAM_LIBRARY_INSTALLED_MACHINES_DIR}sim03_mill_4ax\graphics\sim03_mill_4ax
+DATA|sim03_mill_4ax_sinumerik_mm|MDM0101|4-Ax Mill Horizontal B-Table|Sinumerik|Example|${UGII_CAM_LIBRARY_INSTALLED_MACHINES_DIR}sim03_mill_4ax\sim03_mill_4ax_sinumerik_mm.dat|1.000000|${UGII_CAM_LIBRARY_INSTALLED_MACHINES_DIR}sim03_mill_4ax\graphics\sim03_mill_4ax
+
+DATA|sim04_mill_4ax_fanuc_mm|MDM0101|4-Ax Mill Vertical A-Table|Fanuc|Example|${UGII_CAM_LIBRARY_INSTALLED_MACHINES_DIR}sim04_mill_4ax\sim04_mill_4ax_fanuc_mm.dat|1.000000|${UGII_CAM_LIBRARY_INSTALLED_MACHINES_DIR}sim04_mill_4ax\graphics\sim04_mill_4ax
+DATA|sim04_mill_4ax_tnc_mm|MDM0101|4-Ax Mill Vertical A-Table|HeidenhainTNC|Example|${UGII_CAM_LIBRARY_INSTALLED_MACHINES_DIR}sim04_mill_4ax\sim04_mill_4ax_tnc_mm.dat|1.000000|${UGII_CAM_LIBRARY_INSTALLED_MACHINES_DIR}sim04_mill_4ax\graphics\sim04_mill_4ax
+DATA|sim04_mill_4ax_sinumerik_mm|MDM0101|4-Ax Mill Vertical A-Table|Sinumerik|Example|${UGII_CAM_LIBRARY_INSTALLED_MACHINES_DIR}sim04_mill_4ax\sim04_mill_4ax_sinumerik_mm.dat|1.000000|${UGII_CAM_LIBRARY_INSTALLED_MACHINES_DIR}sim04_mill_4ax\graphics\sim04_mill_4ax
+
+DATA|sim05_mill_5ax_fanuc_mm|MDM0101|5-Ax Mill Gantry AC-Head|Fanuc|Example|${UGII_CAM_LIBRARY_INSTALLED_MACHINES_DIR}sim05_mill_5ax\sim05_mill_5ax_fanuc_mm.dat|1.000000|${UGII_CAM_LIBRARY_INSTALLED_MACHINES_DIR}sim05_mill_5ax\graphics\sim05_mill_5ax
+DATA|sim05_mill_5ax_tnc_mm|MDM0101|5-Ax Mill Gantry AC-Head|HeidenhainTNC|Example|${UGII_CAM_LIBRARY_INSTALLED_MACHINES_DIR}sim05_mill_5ax\sim05_mill_5ax_tnc_mm.dat|1.000000|${UGII_CAM_LIBRARY_INSTALLED_MACHINES_DIR}sim05_mill_5ax\graphics\sim05_mill_5ax
+DATA|sim05_mill_5ax_sinumerik_mm|MDM0101|5-Ax Mill Gantry AC-Head|Sinumerik|Example|${UGII_CAM_LIBRARY_INSTALLED_MACHINES_DIR}sim05_mill_5ax\sim05_mill_5ax_sinumerik_mm.dat|1.000000|${UGII_CAM_LIBRARY_INSTALLED_MACHINES_DIR}sim05_mill_5ax\graphics\sim05_mill_5ax
+DATA|sim05_mill_5ax_okuma_mm|MDM0101|5-Ax Mill Gantry AC-Head|okuma|Example|${UGII_CAM_LIBRARY_INSTALLED_MACHINES_DIR}sim05_mill_5ax\sim05_mill_5ax_okuma_mm.dat|1.000000|${UGII_CAM_LIBRARY_INSTALLED_MACHINES_DIR}sim05_mill_5ax\graphics\sim05_mill_5ax
+
+DATA|sim06_mill_5ax_fanuc_mm|MDM0101|5-Ax Mill Vertical BC-Table Offset|Fanuc|Example|${UGII_CAM_LIBRARY_INSTALLED_MACHINES_DIR}sim06_mill_5ax\sim06_mill_5ax_fanuc_mm.dat|1.000000|${UGII_CAM_LIBRARY_INSTALLED_MACHINES_DIR}sim06_mill_5ax\graphics\sim06_mill_5ax
+DATA|sim06_mill_5ax_tnc_mm|MDM0101|5-Ax Mill Vertical BC-Table Offset|HeidenhainTNC|Example|${UGII_CAM_LIBRARY_INSTALLED_MACHINES_DIR}sim06_mill_5ax\sim06_mill_5ax_tnc_mm.dat|1.000000|${UGII_CAM_LIBRARY_INSTALLED_MACHINES_DIR}sim06_mill_5ax\graphics\sim06_mill_5ax
+DATA|sim06_mill_5ax_sinumerik_mm|MDM0101|5-Ax Mill Vertical BC-Table Offset|Sinumerik|Example|${UGII_CAM_LIBRARY_INSTALLED_MACHINES_DIR}sim06_mill_5ax\sim06_mill_5ax_sinumerik_mm.dat|1.000000|${UGII_CAM_LIBRARY_INSTALLED_MACHINES_DIR}sim06_mill_5ax\graphics\sim06_mill_5ax
+
+DATA|sim07_mill_5ax_fanuc_mm|MDM0101|5-Ax Mill Vertical B-Head C-Table|Fanuc|Example|${UGII_CAM_LIBRARY_INSTALLED_MACHINES_DIR}sim07_mill_5ax\sim07_mill_5ax_fanuc_mm.dat|1.000000|${UGII_CAM_LIBRARY_INSTALLED_MACHINES_DIR}sim07_mill_5ax\graphics\sim07_mill_5ax
+DATA|sim07_mill_5ax_tnc_mm|MDM0101|5-Ax Mill Vertical B-Head C-Table|HeidenhainTNC|Example|${UGII_CAM_LIBRARY_INSTALLED_MACHINES_DIR}sim07_mill_5ax\sim07_mill_5ax_tnc_mm.dat|1.000000|${UGII_CAM_LIBRARY_INSTALLED_MACHINES_DIR}sim07_mill_5ax\graphics\sim07_mill_5ax
+DATA|sim07_mill_5ax_sinumerik_mm|MDM0101|5-Ax Mill Vertical B-Head C-Table|Sinumerik|Example|${UGII_CAM_LIBRARY_INSTALLED_MACHINES_DIR}sim07_mill_5ax\sim07_mill_5ax_sinumerik_mm.dat|1.000000|${UGII_CAM_LIBRARY_INSTALLED_MACHINES_DIR}sim07_mill_5ax\graphics\sim07_mill_5ax
+
+DATA|sim08_mill_5ax_fanuc_mm|MDM0101|5-Ax Mill Vertical AC-Table|Fanuc|Example|${UGII_CAM_LIBRARY_INSTALLED_MACHINES_DIR}sim08_mill_5ax\sim08_mill_5ax_fanuc_mm.dat|1.000000|${UGII_CAM_LIBRARY_INSTALLED_MACHINES_DIR}sim08_mill_5ax\graphics\sim08_mill_5ax
+DATA|sim08_mill_5ax_tnc_mm|MDM0101|5-Ax Mill Vertical AC-Table|HeidenhainTNC|Example|${UGII_CAM_LIBRARY_INSTALLED_MACHINES_DIR}sim08_mill_5ax\sim08_mill_5ax_tnc_mm.dat|1.000000|${UGII_CAM_LIBRARY_INSTALLED_MACHINES_DIR}sim08_mill_5ax\graphics\sim08_mill_5ax
+DATA|sim08_mill_5ax_sinumerik_mm|MDM0101|5-Ax Mill Vertical AC-Table|Sinumerik|Example|${UGII_CAM_LIBRARY_INSTALLED_MACHINES_DIR}sim08_mill_5ax\sim08_mill_5ax_sinumerik_mm.dat|1.000000|${UGII_CAM_LIBRARY_INSTALLED_MACHINES_DIR}sim08_mill_5ax\graphics\sim08_mill_5ax
+
+DATA|sim09_mill_5ax_fanuc_mm|MDM0101|5-Ax Mill Vertical 45-B-Head C-Table|Fanuc|Example|${UGII_CAM_LIBRARY_INSTALLED_MACHINES_DIR}sim09_mill_5ax\sim09_mill_5ax_fanuc_mm.dat|1.000000|${UGII_CAM_LIBRARY_INSTALLED_MACHINES_DIR}sim09_mill_5ax\graphics\sim09_mill_5ax
+DATA|sim09_mill_5ax_tnc_mm|MDM0101|5-Ax Mill Vertical 45-B-Head C-Table|HeidenhainTNC|Example|${UGII_CAM_LIBRARY_INSTALLED_MACHINES_DIR}sim09_mill_5ax\sim09_mill_5ax_tnc_mm.dat|1.000000|${UGII_CAM_LIBRARY_INSTALLED_MACHINES_DIR}sim09_mill_5ax\graphics\sim09_mill_5ax
+DATA|sim09_mill_5ax_sinumerik_mm|MDM0104|5-Ax Turn-Mill Vertical 45-B-Head C-Table|Sinumerik|Example|${UGII_CAM_LIBRARY_INSTALLED_MACHINES_DIR}sim09_mill_5ax\sim09_mill_5ax_sinumerik_mm.dat|1.000000|${UGII_CAM_LIBRARY_INSTALLED_MACHINES_DIR}sim09_mill_5ax\graphics\sim09_mill_5ax
+
+DATA|sim11_turn_2ax_fanuc_mm|MDM0201|2-Ax Turn Horizontal|Fanuc|Example|${UGII_CAM_LIBRARY_INSTALLED_MACHINES_DIR}sim11_turn_2ax\sim11_turn_2ax_fanuc_mm.dat|1.000000|${UGII_CAM_LIBRARY_INSTALLED_MACHINES_DIR}sim11_turn_2ax\graphics\sim11_turn_2ax
+DATA|sim11_turn_2ax_sinumerik_mm|MDM0201|2-Ax Turn Horizontal|Sinumerik|Example|${UGII_CAM_LIBRARY_INSTALLED_MACHINES_DIR}sim11_turn_2ax\sim11_turn_2ax_sinumerik_mm.dat|1.000000|${UGII_CAM_LIBRARY_INSTALLED_MACHINES_DIR}sim11_turn_2ax\graphics\sim11_turn_2ax
+
+DATA|sim12_turn_2ax_fanuc_mm|MDM0201|2-Ax Turn Vertical|Fanuc|Example|${UGII_CAM_LIBRARY_INSTALLED_MACHINES_DIR}sim12_turn_2ax\sim12_turn_2ax_fanuc_mm.dat|1.000000|${UGII_CAM_LIBRARY_INSTALLED_MACHINES_DIR}sim12_turn_2ax\graphics\sim12_turn_2ax
+DATA|sim12_turn_2ax_sinumerik_mm|MDM0201|2-Ax Turn Horizontal|Sinumerik|Example|${UGII_CAM_LIBRARY_INSTALLED_MACHINES_DIR}sim12_turn_2ax\sim12_turn_2ax_sinumerik_mm.dat|1.000000|${UGII_CAM_LIBRARY_INSTALLED_MACHINES_DIR}sim12_turn_2ax\graphics\sim12_turn_2ax
+
+DATA|sim13_turn_4ax_fanuc_mm|MDM0201|4-Ax Turn Horizontal 2-Channel|Fanuc|Example|${UGII_CAM_LIBRARY_INSTALLED_MACHINES_DIR}sim13_turn_4ax\sim13_turn_4ax_fanuc_mm.dat|1.000000|${UGII_CAM_LIBRARY_INSTALLED_MACHINES_DIR}sim13_turn_4ax\graphics\sim13_turn_4ax
+
+DATA|sim14_mill_5ax_fanuc_mm|MDM0101|5-Ax Mill Vertical 45-B-Table C-Table|Fanuc|Example|${UGII_CAM_LIBRARY_INSTALLED_MACHINES_DIR}sim14_mill_5ax\sim14_mill_5ax_fanuc_mm.dat|1.000000|${UGII_CAM_LIBRARY_INSTALLED_MACHINES_DIR}sim14_mill_5ax\graphics\sim14_mill_5ax
+DATA|sim14_mill_5ax_tnc_mm|MDM0101|5-Ax Mill Vertical 45-B-Table C-Table|HeidenhainTNC|Example|${UGII_CAM_LIBRARY_INSTALLED_MACHINES_DIR}sim14_mill_5ax\sim14_mill_5ax_tnc_mm.dat|1.000000|${UGII_CAM_LIBRARY_INSTALLED_MACHINES_DIR}sim14_mill_5ax\graphics\sim14_mill_5ax
+DATA|sim14_mill_5ax_sinumerik_mm|MDM0101|5-Ax Mill Vertical 45-B-Table C-Table|Sinumerik|Example|${UGII_CAM_LIBRARY_INSTALLED_MACHINES_DIR}sim14_mill_5ax\sim14_mill_5ax_sinumerik_mm.dat|1.000000|${UGII_CAM_LIBRARY_INSTALLED_MACHINES_DIR}sim14_mill_5ax\graphics\sim14_mill_5ax
+DATA|sim14_mill_5ax_millplus_mm|MDM0101|5-Ax Mill Vertical 45-B-Table C-Table|Millplus|Example|${UGII_CAM_LIBRARY_INSTALLED_MACHINES_DIR}sim14_mill_5ax\sim14_mill_5ax_millplus_mm.dat|1.000000|${UGII_CAM_LIBRARY_INSTALLED_MACHINES_DIR}sim14_mill_5ax\graphics\sim14_mill_5ax
+
+DATA|sim15_millturn_9ax_sinumerik_mm|MDM0204|9-Ax Mill-Turn Dual-Channel B-Axis-Head|Sinumerik|Example|${UGII_CAM_LIBRARY_INSTALLED_MACHINES_DIR}sim15_millturn_9ax\sim15_millturn_9ax_sinumerik_mm.dat|1.000000|${UGII_CAM_LIBRARY_INSTALLED_MACHINES_DIR}sim15_millturn_9ax\graphics\sim15_millturn_9ax
+DATA|sim15_millturn_9ax_fanuc_mm|MDM0204|9-Ax Mill-Turn Dual-Channel B-Axis-Head|fanuc|Example|${UGII_CAM_LIBRARY_INSTALLED_MACHINES_DIR}sim15_millturn_9ax\sim15_millturn_9ax_fanuc_mm.dat|1.000000|${UGII_CAM_LIBRARY_INSTALLED_MACHINES_DIR}sim15_millturn_9ax\graphics\sim15_millturn_9ax
+
+DATA|sim16_mill_headchange|MDM0101|Gantry Mill with Headchanger|Sinumerik|Example|${UGII_CAM_LIBRARY_INSTALLED_MACHINES_DIR}sim16_mill_headchange\sim16_mill_headchange_mm.dat|1.000000|${UGII_CAM_LIBRARY_INSTALLED_MACHINES_DIR}sim16_mill_headchange\graphics\sim16_mill_headchange
+
+# New machine tools inch
+DATA|sim01_mill_3ax_fanuc_in|MDM0101|3-Ax Mill Vertical|Fanuc|Example|${UGII_CAM_LIBRARY_INSTALLED_MACHINES_DIR}sim01_mill_3ax\sim01_mill_3ax_fanuc_in.dat|1.000000|${UGII_CAM_LIBRARY_INSTALLED_MACHINES_DIR}sim01_mill_3ax\graphics\sim01_mill_3ax
+DATA|sim01_mill_3ax_tnc_in|MDM0101|3-Ax Mill Vertical|HeidenhainTNC|Example|${UGII_CAM_LIBRARY_INSTALLED_MACHINES_DIR}sim01_mill_3ax\sim01_mill_3ax_tnc_in.dat|1.000000|${UGII_CAM_LIBRARY_INSTALLED_MACHINES_DIR}sim01_mill_3ax\graphics\sim01_mill_3ax
+DATA|sim01_mill_3ax_sinumerik_in|MDM0101|3-Ax Mill Vertical|Sinumerik|Example|${UGII_CAM_LIBRARY_INSTALLED_MACHINES_DIR}sim01_mill_3ax\sim01_mill_3ax_sinumerik_in.dat|1.000000|${UGII_CAM_LIBRARY_INSTALLED_MACHINES_DIR}sim01_mill_3ax\graphics\sim01_mill_3ax
+
+DATA|sim02_mill_3ax_fanuc_in|MDM0101|3-Ax Mill Horizontal|Fanuc|Example|${UGII_CAM_LIBRARY_INSTALLED_MACHINES_DIR}sim02_mill_3ax\sim02_mill_3ax_fanuc_in.dat|1.000000|${UGII_CAM_LIBRARY_INSTALLED_MACHINES_DIR}sim02_mill_3ax\graphics\sim02_mill_3ax
+DATA|sim02_mill_3ax_tnc_in|MDM0101|3-Ax Mill Horizontal|HeidenhainTNC|Example|${UGII_CAM_LIBRARY_INSTALLED_MACHINES_DIR}sim02_mill_3ax\sim02_mill_3ax_tnc_in.dat|1.000000|${UGII_CAM_LIBRARY_INSTALLED_MACHINES_DIR}sim02_mill_3ax\graphics\sim02_mill_3ax
+DATA|sim02_mill_3ax_sinumerik_in|MDM0101|3-Ax Mill Horizontal|Sinumerik|Example|${UGII_CAM_LIBRARY_INSTALLED_MACHINES_DIR}sim02_mill_3ax\sim02_mill_3ax_sinumerik_in.dat|1.000000|${UGII_CAM_LIBRARY_INSTALLED_MACHINES_DIR}sim02_mill_3ax\graphics\sim02_mill_3ax
+
+DATA|sim03_mill_4ax_fanuc_in|MDM0101|4-Ax Mill Horizontal B-Table|Fanuc|Example|${UGII_CAM_LIBRARY_INSTALLED_MACHINES_DIR}sim03_mill_4ax\sim03_mill_4ax_fanuc_in.dat|1.000000|${UGII_CAM_LIBRARY_INSTALLED_MACHINES_DIR}sim03_mill_4ax\graphics\sim03_mill_4ax
+DATA|sim03_mill_4ax_tnc_in|MDM0101|4-Ax Mill Horizontal B-Table|HeidenhainTNC|Example|${UGII_CAM_LIBRARY_INSTALLED_MACHINES_DIR}sim03_mill_4ax\sim03_mill_4ax_tnc_in.dat|1.000000|${UGII_CAM_LIBRARY_INSTALLED_MACHINES_DIR}sim03_mill_4ax\graphics\sim03_mill_4ax
+DATA|sim03_mill_4ax_sinumerik_in|MDM0101|4-Ax Mill Horizontal B-Table|Sinumerik|Example|${UGII_CAM_LIBRARY_INSTALLED_MACHINES_DIR}sim03_mill_4ax\sim03_mill_4ax_sinumerik_in.dat|1.000000|${UGII_CAM_LIBRARY_INSTALLED_MACHINES_DIR}sim03_mill_4ax\graphics\sim03_mill_4ax
+
+DATA|sim04_mill_4ax_fanuc_in|MDM0101|4-Ax Mill Vertical A-Table|Fanuc|Example|${UGII_CAM_LIBRARY_INSTALLED_MACHINES_DIR}sim04_mill_4ax\sim04_mill_4ax_fanuc_in.dat|1.000000|${UGII_CAM_LIBRARY_INSTALLED_MACHINES_DIR}sim04_mill_4ax\graphics\sim04_mill_4ax
+DATA|sim04_mill_4ax_tnc_in|MDM0101|4-Ax Mill Vertical A-Table|HeidenhainTNC|Example|${UGII_CAM_LIBRARY_INSTALLED_MACHINES_DIR}sim04_mill_4ax\sim04_mill_4ax_tnc_in.dat|1.000000|${UGII_CAM_LIBRARY_INSTALLED_MACHINES_DIR}sim04_mill_4ax\graphics\sim04_mill_4ax
+DATA|sim04_mill_4ax_sinumerik_in|MDM0101|4-Ax Mill Vertical A-Table|Sinumerik|Example|${UGII_CAM_LIBRARY_INSTALLED_MACHINES_DIR}sim04_mill_4ax\sim04_mill_4ax_sinumerik_in.dat|1.000000|${UGII_CAM_LIBRARY_INSTALLED_MACHINES_DIR}sim04_mill_4ax\graphics\sim04_mill_4ax
+
+DATA|sim05_mill_5ax_fanuc_in|MDM0101|5-Ax Mill Gantry AC-Head|Fanuc|Example|${UGII_CAM_LIBRARY_INSTALLED_MACHINES_DIR}sim05_mill_5ax\sim05_mill_5ax_fanuc_in.dat|1.000000|${UGII_CAM_LIBRARY_INSTALLED_MACHINES_DIR}sim05_mill_5ax\graphics\sim05_mill_5ax
+DATA|sim05_mill_5ax_tnc_in|MDM0101|5-Ax Mill Gantry AC-Head|HeidenhainTNC|Example|${UGII_CAM_LIBRARY_INSTALLED_MACHINES_DIR}sim05_mill_5ax\sim05_mill_5ax_tnc_in.dat|1.000000|${UGII_CAM_LIBRARY_INSTALLED_MACHINES_DIR}sim05_mill_5ax\graphics\sim05_mill_5ax
+DATA|sim05_mill_5ax_sinumerik_in|MDM0101|5-Ax Mill Gantry AC-Head|Sinumerik|Example|${UGII_CAM_LIBRARY_INSTALLED_MACHINES_DIR}sim05_mill_5ax\sim05_mill_5ax_sinumerik_in.dat|1.000000|${UGII_CAM_LIBRARY_INSTALLED_MACHINES_DIR}sim05_mill_5ax\graphics\sim05_mill_5ax
+DATA|sim05_mill_5ax_okuma_in|MDM0101|5-Ax Mill Gantry AC-Head|okuma|Example|${UGII_CAM_LIBRARY_INSTALLED_MACHINES_DIR}sim05_mill_5ax\sim05_mill_5ax_okuma_in.dat|1.000000|${UGII_CAM_LIBRARY_INSTALLED_MACHINES_DIR}sim05_mill_5ax\graphics\sim05_mill_5ax
+
+DATA|sim06_mill_5ax_fanuc_in|MDM0101|5-Ax Mill Vertical BC-Table Offset|Fanuc|Example|${UGII_CAM_LIBRARY_INSTALLED_MACHINES_DIR}sim06_mill_5ax\sim06_mill_5ax_fanuc_in.dat|1.000000|${UGII_CAM_LIBRARY_INSTALLED_MACHINES_DIR}sim06_mill_5ax\graphics\sim06_mill_5ax
+DATA|sim06_mill_5ax_tnc_in|MDM0101|5-Ax Mill Vertical BC-Table Offset|HeidenhainTNC|Example|${UGII_CAM_LIBRARY_INSTALLED_MACHINES_DIR}sim06_mill_5ax\sim06_mill_5ax_tnc_in.dat|1.000000|${UGII_CAM_LIBRARY_INSTALLED_MACHINES_DIR}sim06_mill_5ax\graphics\sim06_mill_5ax
+DATA|sim06_mill_5ax_sinumerik_in|MDM0101|5-Ax Mill Vertical BC-Table Offset|Sinumerik|Example|${UGII_CAM_LIBRARY_INSTALLED_MACHINES_DIR}sim06_mill_5ax\sim06_mill_5ax_sinumerik_in.dat|1.000000|${UGII_CAM_LIBRARY_INSTALLED_MACHINES_DIR}sim06_mill_5ax\graphics\sim06_mill_5ax
+
+DATA|sim07_mill_5ax_fanuc_in|MDM0101|5-Ax Mill Vertical B-Head C-Table|Fanuc|Example|${UGII_CAM_LIBRARY_INSTALLED_MACHINES_DIR}sim07_mill_5ax\sim07_mill_5ax_fanuc_in.dat|1.000000|${UGII_CAM_LIBRARY_INSTALLED_MACHINES_DIR}sim07_mill_5ax\graphics\sim07_mill_5ax
+DATA|sim07_mill_5ax_tnc_in|MDM0101|5-Ax Mill Vertical B-Head C-Table|HeidenhainTNC|Example|${UGII_CAM_LIBRARY_INSTALLED_MACHINES_DIR}sim07_mill_5ax\sim07_mill_5ax_tnc_in.dat|1.000000|${UGII_CAM_LIBRARY_INSTALLED_MACHINES_DIR}sim07_mill_5ax\graphics\sim07_mill_5ax
+DATA|sim07_mill_5ax_sinumerik_in|MDM0101|5-Ax Mill Vertical B-Head C-Table|Sinumerik|Example|${UGII_CAM_LIBRARY_INSTALLED_MACHINES_DIR}sim07_mill_5ax\sim07_mill_5ax_sinumerik_in.dat|1.000000|${UGII_CAM_LIBRARY_INSTALLED_MACHINES_DIR}sim07_mill_5ax\graphics\sim07_mill_5ax
+
+DATA|sim08_mill_5ax_fanuc_in|MDM0101|5-Ax Mill Vertical AC-Table|Fanuc|Example|${UGII_CAM_LIBRARY_INSTALLED_MACHINES_DIR}sim08_mill_5ax\sim08_mill_5ax_fanuc_in.dat|1.000000|${UGII_CAM_LIBRARY_INSTALLED_MACHINES_DIR}sim08_mill_5ax\graphics\sim08_mill_5ax
+DATA|sim08_mill_5ax_tnc_in|MDM0101|5-Ax Mill Vertical AC-Table|HeidenhainTNC|Example|${UGII_CAM_LIBRARY_INSTALLED_MACHINES_DIR}sim08_mill_5ax\sim08_mill_5ax_tnc_in.dat|1.000000|${UGII_CAM_LIBRARY_INSTALLED_MACHINES_DIR}sim08_mill_5ax\graphics\sim08_mill_5ax
+DATA|sim08_mill_5ax_sinumerik_in|MDM0101|5-Ax Mill Vertical AC-Table|Sinumerik|Example|${UGII_CAM_LIBRARY_INSTALLED_MACHINES_DIR}sim08_mill_5ax\sim08_mill_5ax_sinumerik_in.dat|1.000000|${UGII_CAM_LIBRARY_INSTALLED_MACHINES_DIR}sim08_mill_5ax\graphics\sim08_mill_5ax
+
+DATA|sim09_mill_5ax_fanuc_in|MDM0101|5-Ax Mill Vertical 45-B-Head C-Table|Fanuc|Example|${UGII_CAM_LIBRARY_INSTALLED_MACHINES_DIR}sim09_mill_5ax\sim09_mill_5ax_fanuc_in.dat|1.000000|${UGII_CAM_LIBRARY_INSTALLED_MACHINES_DIR}sim09_mill_5ax\graphics\sim09_mill_5ax
+DATA|sim09_mill_5ax_tnc_in|MDM0101|5-Ax Mill Vertical 45-B-Head C-Table|HeidenhainTNC|Example|${UGII_CAM_LIBRARY_INSTALLED_MACHINES_DIR}sim09_mill_5ax\sim09_mill_5ax_tnc_in.dat|1.000000|${UGII_CAM_LIBRARY_INSTALLED_MACHINES_DIR}sim09_mill_5ax\graphics\sim09_mill_5ax
+DATA|sim09_mill_5ax_sinumerik_in|MDM0101|5-Ax Mill Vertical 45-B-Head C-Table|Sinumerik|Example|${UGII_CAM_LIBRARY_INSTALLED_MACHINES_DIR}sim09_mill_5ax\sim09_mill_5ax_sinumerik_in.dat|1.000000|${UGII_CAM_LIBRARY_INSTALLED_MACHINES_DIR}sim09_mill_5ax\graphics\sim09_mill_5ax
+
+DATA|sim10_millturn_5ax_fanuc_in|MDM0204|XZC_MILLTURN|Fanuc|Millturn|${UGII_CAM_LIBRARY_INSTALLED_MACHINES_DIR}sim10_millturn_5ax\sim10_millturn_5ax_fanuc_in.dat|1.000000|${UGII_CAM_LIBRARY_INSTALLED_MACHINES_DIR}sim10_millturn_5ax\graphics\sim10_millturn_5ax
+
+DATA|sim11_turn_2ax_fanuc_in|MDM0201|2-Ax Turn Horizontal|Fanuc|Example|${UGII_CAM_LIBRARY_INSTALLED_MACHINES_DIR}sim11_turn_2ax\sim11_turn_2ax_fanuc_in.dat|1.000000|${UGII_CAM_LIBRARY_INSTALLED_MACHINES_DIR}sim11_turn_2ax\graphics\sim11_turn_2ax
+DATA|sim11_turn_2ax_sinumerik_in|MDM0201|2-Ax Turn Horizontal|Sinumerik|Example|${UGII_CAM_LIBRARY_INSTALLED_MACHINES_DIR}sim11_turn_2ax\sim11_turn_2ax_sinumerik_in.dat|1.000000|${UGII_CAM_LIBRARY_INSTALLED_MACHINES_DIR}sim11_turn_2ax\graphics\sim11_turn_2ax
+
+DATA|sim12_turn_2ax_fanuc_in|MDM0201|2-Ax Turn Vertical|Fanuc|Example|${UGII_CAM_LIBRARY_INSTALLED_MACHINES_DIR}sim12_turn_2ax\sim12_turn_2ax_fanuc_in.dat|1.000000|${UGII_CAM_LIBRARY_INSTALLED_MACHINES_DIR}sim12_turn_2ax\graphics\sim12_turn_2ax
+DATA|sim12_turn_2ax_sinumerik_in|MDM0201|2-Ax Turn Horizontal|Sinumerik|Example|${UGII_CAM_LIBRARY_INSTALLED_MACHINES_DIR}sim12_turn_2ax\sim12_turn_2ax_sinumerik_in.dat|1.000000|${UGII_CAM_LIBRARY_INSTALLED_MACHINES_DIR}sim12_turn_2ax\graphics\sim12_turn_2ax
+
+DATA|sim13_turn_4ax_fanuc_in|MDM0201|4-Ax Turn Horizontal 2-Channel|Fanuc|Example|${UGII_CAM_LIBRARY_INSTALLED_MACHINES_DIR}sim13_turn_4ax\sim13_turn_4ax_fanuc_in.dat|1.000000|${UGII_CAM_LIBRARY_INSTALLED_MACHINES_DIR}sim13_turn_4ax\graphics\sim13_turn_4ax
+
+DATA|sim14_mill_5ax_fanuc_in|MDM0101|5-Ax Mill Vertical 45-B-Table C-Table|Fanuc|Example|${UGII_CAM_LIBRARY_INSTALLED_MACHINES_DIR}sim14_mill_5ax\sim14_mill_5ax_fanuc_in.dat|1.000000|${UGII_CAM_LIBRARY_INSTALLED_MACHINES_DIR}sim14_mill_5ax\graphics\sim14_mill_5ax
+DATA|sim14_mill_5ax_tnc_in|MDM0101|5-Ax Mill Vertical 45-B-Table C-Table|HeidenhainTNC|Example|${UGII_CAM_LIBRARY_INSTALLED_MACHINES_DIR}sim14_mill_5ax\sim14_mill_5ax_tnc_in.dat|1.000000|${UGII_CAM_LIBRARY_INSTALLED_MACHINES_DIR}sim14_mill_5ax\graphics\sim14_mill_5ax
+DATA|sim14_mill_5ax_sinumerik_in|MDM0101|5-Ax Mill Vertical 45-B-Table C-Table|Sinumerik|Example|${UGII_CAM_LIBRARY_INSTALLED_MACHINES_DIR}sim14_mill_5ax\sim14_mill_5ax_sinumerik_in.dat|1.000000|${UGII_CAM_LIBRARY_INSTALLED_MACHINES_DIR}sim14_mill_5ax\graphics\sim14_mill_5ax
+DATA|sim14_mill_5ax_millplus_in|MDM0101|5-Ax Mill Vertical 45-B-Table C-Table|Millplus|Example|${UGII_CAM_LIBRARY_INSTALLED_MACHINES_DIR}sim14_mill_5ax\sim14_mill_5ax_millplus_in.dat|1.000000|${UGII_CAM_LIBRARY_INSTALLED_MACHINES_DIR}sim14_mill_5ax\graphics\sim14_mill_5ax
+
+DATA|smc5_mill_3ax_fanuc|MDM0101|3-Ax Mill Vertical|Fanuc|Hartford|${UGII_CAM_LIBRARY_INSTALLED_MACHINES_DIR}smc5_mill_3ax\smc5_mill_3ax_fanuc.dat|1.000000|${UGII_CAM_LIBRARY_INSTALLED_MACHINES_DIR}smc5_mill_3ax\graphics\smc5_mill_3ax

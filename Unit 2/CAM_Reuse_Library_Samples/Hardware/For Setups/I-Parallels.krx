@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<KnowledgeReuse>
+<ItemData>
+	<Part Location="I-Parallels.prt"/>
+	<KeyParameter DescriptiveName="UNITS">UNITS</KeyParameter>
+	<KeyParameter DescriptiveName="SIZE">SIZE</KeyParameter>
+	<KeyParameter DescriptiveName="LENGTH">LENGTH</KeyParameter>
+	<KeyParameter DescriptiveName="WIDTH">WIDTH</KeyParameter>
+	<KeyParameter DescriptiveName="HEIGHT">HEIGHT</KeyParameter>
+	<KeyParameter DescriptiveName="WEB">WEB</KeyParameter>
+	<DataFile Location="I-Parallels.xls"/>
+</ItemData>
+<ComponentData>
+</ComponentData>
+</KnowledgeReuse>

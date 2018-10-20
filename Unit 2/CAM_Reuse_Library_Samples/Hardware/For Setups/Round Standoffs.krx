@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<KnowledgeReuse>
+<ItemData>
+	<Part Location="Round Standoffs.prt"/>
+	<KeyParameter DescriptiveName="SIZE">SIZE</KeyParameter>
+	<KeyParameter DescriptiveName="DIAMETER">DIAMETER</KeyParameter>
+	<KeyParameter DescriptiveName="HEIGHT">HEIGHT</KeyParameter>
+	<DataFile Location="Round Standoffs.xls"/>
+	<DetailImage Location="../../../../../../UG_data/user_common/My_ReUse_Library/CAM Tooling/Hardware/For Setups/Round Standoffs.bmp"/>
+</ItemData>
+<ComponentData>
+</ComponentData>
+</KnowledgeReuse>

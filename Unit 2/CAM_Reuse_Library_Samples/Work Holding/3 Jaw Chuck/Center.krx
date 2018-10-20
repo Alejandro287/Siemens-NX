@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<KnowledgeReuse>
+<ItemData>
+	<Part Location="Center.prt"/>
+	<KeyParameter DescriptiveName="$DESCRIPTION">$DESCRIPTION</KeyParameter>
+	<KeyParameter DescriptiveName="CENTER_DIA">CENTER_DIA</KeyParameter>
+	<KeyParameter DescriptiveName="TAPPER_ANGLE">TAPPER_ANGLE</KeyParameter>
+	<DataFile Location="Center.xls"/>
+</ItemData>
+<ComponentData>
+</ComponentData>
+</KnowledgeReuse>

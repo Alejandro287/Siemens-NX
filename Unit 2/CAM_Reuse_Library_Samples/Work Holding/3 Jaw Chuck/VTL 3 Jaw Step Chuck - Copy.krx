@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<KnowledgeReuse>
+<ItemData>
+	<Part Location="VTL 3 Jaw Step Chuck.prt"/>
+	<KeyParameter DescriptiveName="CLAMP_DIA">CLAMP_DIA</KeyParameter>
+	<KeyParameter DescriptiveName="CLAMP_DIA_DEPTH">CLAMP_DIA_DEPTH</KeyParameter>
+	<KeyParameter DescriptiveName="CLEAR_DIA">CLEAR_DIA</KeyParameter>
+	<KeyParameter DescriptiveName="SECONDARY_CLEAR_DIA">SECONDARY_CLEAR_DIA</KeyParameter>
+	<DataFile Location="../../../../../../UG_data/user_common/My_ReUse_Library/CAM Tooling/Work Holding/3 Jaw Chuck/VTL 3 Jaw Step Chuck.xls"/>
+</ItemData>
+<ComponentData>
+</ComponentData>
+</KnowledgeReuse>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<KnowledgeReuse>
+<ItemData>
+	<Part Location="VTL 3 Jaw Step Chuck.prt"/>
+	<KeyParameter DescriptiveName="UNITS">UNITS</KeyParameter>
+	<KeyParameter DescriptiveName="CLAMP DIAMETER">CLAMP DIAMETER</KeyParameter>
+	<KeyParameter DescriptiveName="CLAMP DEPTH">CLAMP DEPTH</KeyParameter>
+	<KeyParameter DescriptiveName="CLEARANCE DIAMETER">CLEARANCE DIAMETER</KeyParameter>
+	<KeyParameter DescriptiveName="SECONDARY CLEARANCE">SECONDARY CLEARANCE</KeyParameter>
+	<DataFile Location="../../../../../../UG_data/user_common/My_ReUse_Library/CAM Tooling/Work Holding/3 Jaw Chuck/VTL 3 Jaw Step Chuck.xls"/>
+</ItemData>
+<ComponentData>
+</ComponentData>
+</KnowledgeReuse>

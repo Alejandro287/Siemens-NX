@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<KnowledgeReuse>
+<ItemData>
+	<Part Location="Kurt HD690 Vise.prt"/>
+	<KeyParameter DescriptiveName="Jaw Opening">JAW_OPENING</KeyParameter>
+	<DataFile Location="Kurt HD690 Vise.xls"/>
+	<DetailImage Location="Kurt HD690 Vise.bmp"/>
+</ItemData>
+</KnowledgeReuse>
